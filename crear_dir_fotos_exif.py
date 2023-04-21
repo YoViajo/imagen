@@ -1,6 +1,6 @@
 #####################################################
 #  A partir de una lista de archivos JPG, extrae
-#  la fecha de cada archivo y crea un
+#  la fecha EXIF de cada archivo y crea un
 #  subdirectorio derivado de la fecha y un código
 #  corto que identifica el tipo de cámara. Luego
 #  mueve el archivo JPG a ese nuevo subdirectorio         
