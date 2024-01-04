@@ -2,7 +2,7 @@
 Utilitarios de apoyo al manejo de imágenes. 
 
 **Código R**
-- [procesa archivos imagen y video en estructura predefina; crea versión baja resolución](procesar_f_proc.R)
+- [procesa archivos imagen y video en estructura predefinida; crea versión baja resolución](procesar_f_proc.R)
 
 
 **Código Python**
