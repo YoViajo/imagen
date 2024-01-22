@@ -1,0 +1,10 @@
+bash ~/lab/scripts/batch-image-resize.sh
+
+
+Dimensiones
+original: 4912 x 3264
+nueva: 1000 x 664
+
+
+4912 / factor = 1000
+factor = 1000/4912 = 0,2036

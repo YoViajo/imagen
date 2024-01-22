@@ -1,0 +1,5 @@
+https://guides.wp-bullet.com/batch-resize-images-using-linux-command-line-and-imagemagick/
+
+Basado en:
+
+Batch Resize Images using Linux Command Line and Imagemagick
