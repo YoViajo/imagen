@@ -2,7 +2,7 @@
 
 Aplicaciones Python para manipulación de imágenes.
 
-[Quita fondo de imagen](01/)
+[Quitar fondo de imagen](01/)
 
 
 
