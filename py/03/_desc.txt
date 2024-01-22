@@ -1,0 +1,8 @@
+https://python.plainenglish.io/create-a-photo-organizer-in-1-hour-with-python-9d4b82552f21
+
+Create a Photo Organizer in 1 hour with Python
+
+
+Organizador de fotos: reordena las fotos de un directorio origen en un nuevo directorio destino. Las fotos son reagrupadas por <año-mes> y renombradas <día-hora>
+No procesa archivos RAW ni videos
+ 

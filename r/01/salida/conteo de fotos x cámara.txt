@@ -1,0 +1,24 @@
+
+Conteo de fotos por cámara:
+   Nikon P900 :  24780 
+   Nikon P90 :  21892 
+   Canon Powershot SD700 IS :  14004 
+   Canon Powershot S1 IS :  12018 
+   Sony Nex-6 :  9768 
+   Huawei 6P :  6835 
+   Nikon CoolPix S3300 :  5396 
+   Xiaomi Redmi Note 8 Pro :  3216 
+   Fuji FinePix S8100 :  3126 
+   Xiaomi Redmi 5 Plus :  2614 
+   Nikon CoolPix S610 :  1913 
+   Canon Powershot A75 :  951 
+   Canon Powershot G3 :  590 
+   LG Nexus 4 :  553 
+   desconocido :  422 
+   Olympus D-340R :  407 
+   Samsung Galaxy J5 :  178 
+   Canon Powershot SD1300 IS :  71 
+   Blü Advance 4.0 :  61 
+   Samsung Galaxy Tab S :  24 
+   Samsung GT-I8190N :  16 
+   Olympus FE-240 :  11 
