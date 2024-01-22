@@ -1,0 +1,4 @@
+Recorre una estructura de carpetas con subcarpetas, calcula estadísticas básicas y las escribe en un archivo texto
+
+:: Python y paquetes
+
