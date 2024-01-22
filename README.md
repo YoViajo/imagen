@@ -14,3 +14,7 @@ Herramientas y técnicas de creación y manejo de imágenes.
 
 - [mueve archivos a subdirectorios nuevos creados a partir de fecha extraída del nombre de archivos (MS Windows)](img_crear_dir_fotos_xiaomi_w.py) 
 
+**Linux**
+
+[Herramientas Linux](linux/README.md)
+
