@@ -1,0 +1,8 @@
+$ find /media/windows/f/ -type f -iname "*.jpg" | sed -e 's/\/[^/]*$//' | sort | uniq -c | sort -nr | head -n 5 > salida.txt
+
+
+   1161 /media/windows/f/zArch/_2020/2020-08-29 r
+    852 /media/windows/f/zRecibido/_familia/flia Mendez Ferreira/viaje EEUU (2010 dic)/fotos usa kodak
+    844 /media/windows/f/zArch/_2020/2020-08-29 r/altaRes
+    843 /media/windows/f/zArch/_2020/2020-08-29 r/.picasaoriginals
+    663 /media/windows/f/zArch/_2020/2020-10-22 r

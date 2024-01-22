@@ -1,14 +1,14 @@
-# Imágenes
-Utilitarios de apoyo al manejo de imágenes. 
+# Imagen
+Herramientas y técnicas de creación y manejo de imágenes. 
 
-**Código R**
+**R**
 - [procesa archivos imagen y video en estructura predefinida; crea versión baja resolución (MS Windows)](procesar_f_proc_w.R)
 
 - [procesa archivos imagen y video en estructura predefinida (Linux)](procesar_f_proc_x.R)
 
 - [compilar imágenes de alta resolución, para facilitar respaldo GFotos (Linux)](compilar_altaRes_x.R)
 
-**Código Python**
+**Python**
 
 - [mueve archivos a subdirectorios nuevos creados a partir de fecha extraída de metadatos EXIF (MS Windows)](crear_dir_fotos_exif_w.py)
 

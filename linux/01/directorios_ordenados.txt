@@ -1,0 +1,32 @@
+$ du -h --max-depth=1 /media/windows/f/zArch | sort -hr > directorios_ordenados.txt
+
+
+684G	/media/windows/f/zArch
+132G	/media/windows/f/zArch/_2020
+72G	/media/windows/f/zArch/_2021
+61G	/media/windows/f/zArch/_2022
+52G	/media/windows/f/zArch/_2014
+51G	/media/windows/f/zArch/_2018
+44G	/media/windows/f/zArch/_2010
+41G	/media/windows/f/zArch/_2017
+39G	/media/windows/f/zArch/_2007
+37G	/media/windows/f/zArch/_2019
+29G	/media/windows/f/zArch/_2009
+27G	/media/windows/f/zArch/_2013
+27G	/media/windows/f/zArch/_2006
+22G	/media/windows/f/zArch/_2008
+20G	/media/windows/f/zArch/_2011
+18G	/media/windows/f/zArch/_2012
+12G	/media/windows/f/zArch/_2016
+3,4G	/media/windows/f/zArch/_2015
+2,3G	/media/windows/f/zArch/_2005
+1,2G	/media/windows/f/zArch/_2003
+337M	/media/windows/f/zArch/_2002
+280M	/media/windows/f/zArch/_2004
+246M	/media/windows/f/zArch/Instagram
+107M	/media/windows/f/zArch/EEUU
+79M	/media/windows/f/zArch/_2001
+7,9M	/media/windows/f/zArch/Europa
+5,1M	/media/windows/f/zArch/avion
+4,4M	/media/windows/f/zArch/Panoramio
+216K	/media/windows/f/zArch/escaner
