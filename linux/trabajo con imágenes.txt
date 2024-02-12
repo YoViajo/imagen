@@ -1,0 +1,17 @@
+# obtener tamaño de carpetas, lista 20 resultados ordenados por tamaño
+du -hc /media/eric/disk/DCIM | sort -rh | head -20
+
+
+# ejecutar script Bash sin haberlo marcado previamente como ejecutable
+bash ~/scripts/lotes-redimens-imagen.sh
+
+
+# obtener información (EXIF) de una imagen
+
+$ file imagen.jpg
+
+## ImageMagick ##
+
+# cambiar tamaño y calidad de la imagen
+convert DSCN5400.JPG -resize 22% -quality 60 salida.jpg 
+
