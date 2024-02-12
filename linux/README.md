@@ -5,7 +5,7 @@ La mayoría de los comandos a continuación requieren [Imagemagick](https://imag
 
 [Cálculo de estadísticas del espacio de almacenamiento de fotos](01/)
 
-[Varios comandos comunes](/trabajo%20con%20imágenes.txt)
+[Varios comandos comunes](/trabajo_imagenes.txt)
 
 [Convertir varias imágenes PNG en archivo GIF animado](/img_conv_pngs_gif.sh)
 
