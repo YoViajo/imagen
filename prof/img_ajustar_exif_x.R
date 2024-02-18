@@ -15,7 +15,7 @@ if (!dir.exists(subcarpeta)) {
 procesar_archivo <- function(archivo) {
   # Extraer la fecha del nombre del archivo
   nombre_archivo <- basename(archivo)
-  if (grepl("^IMG_", nombre_archivo)) {
+  if (grepl("^(IMG|PANO|VID)_", nombre_archivo)) {
     partes <- unlist(strsplit(nombre_archivo, "[_.]"))
     fecha_hora_str <- paste(partes[2], partes[3], sep = "T")
     fecha_hora_nombre <- ymd_hms(str_replace_all(fecha_hora_str, "([0-9]{4})([0-9]{2})([0-9]{2})T([0-9]{2})([0-9]{2})([0-9]{2})", "\\1-\\2-\\3 \\4:\\5:\\6"))
@@ -39,9 +39,8 @@ procesar_archivo <- function(archivo) {
 }
 
 # Procesar todos los archivos que cumplan con los patrones
-patron1 <- "^(IMG|PANO)_\\d{8}_.*\\.jpg$"
+patron1 <- "^(IMG|PANO|VID)_\\d{8}_.*\\.(jpg|mp4)$"
 patron2 <- "^IMG-\\d{8}-.*\\.jpg$"
 archivos <- c(dir(directorio, pattern = patron1, full.names = TRUE),
               dir(directorio, pattern = patron2, full.names = TRUE))
 sapply(archivos, procesar_archivo)
-
