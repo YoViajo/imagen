@@ -13,16 +13,16 @@ if (!dir.exists(subcarpeta)) {
 
 # Función para procesar cada archivo
 procesar_archivo <- function(archivo) {
-  # Extraer la fecha del nombre del archivo
+  # Extraer la fecha y hora del nombre del archivo
   nombre_archivo <- basename(archivo)
-  if (grepl("^IMG_", nombre_archivo)) {
+  if (grepl("^(IMG|PANO|VID)_", nombre_archivo)) {
     partes <- unlist(strsplit(nombre_archivo, "[_.]"))
     fecha_hora_str <- paste(partes[2], partes[3], sep = "T")
     fecha_hora_nombre <- ymd_hms(str_replace_all(fecha_hora_str, "([0-9]{4})([0-9]{2})([0-9]{2})T([0-9]{2})([0-9]{2})([0-9]{2})", "\\1-\\2-\\3 \\4:\\5:\\6"))
   } else if (grepl("^IMG-", nombre_archivo)) {
     partes <- unlist(strsplit(nombre_archivo, "-"))
     fecha_str <- partes[2]
-    fecha_hora_nombre <- ymd(fecha_str)
+    fecha_hora_nombre <- ymd_hms(paste(fecha_str, "00:00:00"))
   } else {
     return()  # Ignorar archivos que no coinciden con los patrones
   }
@@ -30,7 +30,7 @@ procesar_archivo <- function(archivo) {
   # Formatear la fecha y hora para exiftool
   fecha_hora_formato_exif <- format(fecha_hora_nombre, "%Y:%m:%d %H:%M:%S")
   
-  # Comando para actualizar la fecha EXIF usando exiftool
+  # Comando para actualizar la fecha y hora EXIF usando exiftool
   comando <- sprintf("exiftool -DateTimeOriginal=\"%s\" -overwrite_original \"%s\"", fecha_hora_formato_exif, archivo)
   system(comando)
   
@@ -39,9 +39,8 @@ procesar_archivo <- function(archivo) {
 }
 
 # Procesar todos los archivos que cumplan con los patrones
-patron1 <- "^(IMG|PANO)_\\d{8}_.*\\.jpg$"
+patron1 <- "^(IMG|PANO|VID)_\\d{8}_.*\\.(jpg|mp4)$"
 patron2 <- "^IMG-\\d{8}-.*\\.jpg$"
 archivos <- c(dir(directorio, pattern = patron1, full.names = TRUE),
               dir(directorio, pattern = patron2, full.names = TRUE))
 sapply(archivos, procesar_archivo)
-
