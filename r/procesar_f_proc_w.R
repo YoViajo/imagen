@@ -16,7 +16,8 @@ library(magick)
 setwd("D:/Users/earmijo/Downloads/f/proc/")
 
 # Leer los nombres de los archivos y directorios que siguen el patrón específico
-elementos <- list.files(pattern = "^(IMG|VID|PANO)_[0-9]{8}_[0-9]{6}\\.(jpg|mp4)$")
+#elementos <- list.files(pattern = "^(IMG|VID|PANO)_[0-9]{8}_[0-9]{6}\\.(jpg|mp4)$")
+elementos <- list.files(pattern = "^(IMG|VID|PANO)_[0-9]{8}_[0-9]{6}.*\\.(jpg|mp4)$")
 
 # Filtrar solo archivos, excluyendo directorios
 archivos <- Filter(function(x) !file.info(x)$isdir, elementos)
@@ -83,3 +84,4 @@ for (archivo in archivos) {
     }
   }
 }
+
